@@ -1,5 +1,10 @@
+import { api } from '@/data/api'
 import Image from 'next/image'
 import Link from 'next/link'
+
+async function getFeaturedProduts() {
+  const response = await api('/products/featured')
+}
 
 export default async function Home() {
   return (
