@@ -8,8 +8,10 @@ const config: Config = {
   ],
   theme: {
     //utilizando a fonte definida em layout.tsx
-    fontFamily: {
-      sans: 'var(--font-inter)',
+    extend: {
+      fontFamily: {
+        sans: 'var(--font-inter)',
+      },
     },
   },
   plugins: [],
