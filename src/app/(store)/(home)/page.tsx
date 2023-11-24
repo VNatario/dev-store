@@ -18,10 +18,10 @@ export default async function Home() {
   const [highlightedProduct, ...otherProducts] = await getFeaturedProduts()
 
   return (
-    <div className="grid max-h-[860px] grid-cols-9 grid-rows-6 gap-6">
+    <div className="grid max-h-[800px] grid-cols-9 grid-rows-6 gap-6">
       <Link
         href={`/product/${highlightedProduct.slug}`}
-        className="group col-span-6 row-span-6 rounded-lg bg-zinc-900 overflow-hidden relative"
+        className="group col-span-6 row-span-6 rounded-lg bg-zinc-900 overflow-hidden relative flex justify-center items-start"
       >
         <Image
           src={highlightedProduct.image}
@@ -42,12 +42,13 @@ export default async function Home() {
           </span>
         </div>
       </Link>
+
       {otherProducts.map((product) => {
         return (
           <Link
             key={product.id}
             href={`/product/${product.slug}`}
-            className="relative group col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden "
+            className="relative group col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-start"
           >
             <Image
               src={product.image}

@@ -1,5 +1,7 @@
 export default async function Search() {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
-
-  return <h1>Search</h1>
+  return (
+    <div className="bg-slate-600 w-full h-[800px] flex justify-center items-end">
+      <div className="bg-red-500 w-28 h-28"></div>
+    </div>
+  )
 }
