@@ -9,7 +9,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'DevStore',
+  title: {
+    // %s -> Valor dinâmico que vai ser alterado de acordo com o titulo de cada pagina
+    template: '%s | devStore',
+    default: 'devStore',
+  },
   description: 'App de estudo com Next.js',
 }
 
