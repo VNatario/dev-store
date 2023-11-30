@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     default: 'devStore',
   },
   description: 'App de estudo com Next.js',
+  metadataBase: new URL('http://localhost:3000/'),
 }
 
 export default function RootLayout({
