@@ -2,6 +2,7 @@ import { z } from 'zod'
 
 const envSchema = z.object({
   NEXT_PUBLIC_API_BASE_URL: z.string().url(),
+  APP_URL: z.string().url(),
 })
 
 //Verifica se as variáveis de ambiente estão corretas de acordo com o schema
