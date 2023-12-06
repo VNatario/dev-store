@@ -6,8 +6,8 @@ import { FormEvent } from 'react'
 export function SearchForm() {
   const router = useRouter()
 
-  // const searchParams = useSearchParams()
-  // const query = searchParams.get('q')
+  const searchParams = useSearchParams()
+  const query = searchParams.get('q')
 
   function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -35,7 +35,7 @@ export function SearchForm() {
         className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500"
         name="q"
         required
-        // defaultValue={query ?? ''}
+        defaultValue={query ?? ''}
       />
     </form>
   )
