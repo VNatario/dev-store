@@ -1,7 +1,6 @@
 import { api } from '@/data/api'
 import { Product } from '@/data/types/products'
 import { env } from '@/env'
-import Image from 'next/image'
 import { ImageResponse } from 'next/og'
 import { zinc } from 'tailwindcss/colors'
 
